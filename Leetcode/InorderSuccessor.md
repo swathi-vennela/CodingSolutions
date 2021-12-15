@@ -13,7 +13,7 @@ Given the root and a node p in a BST. Find the in-order successor of p.
 /*
     Ref: https://leetcode.com/problems/inorder-successor-in-bst/discuss/72741/C%2B%2B-iterative
     If p has a right subtree, then, its successor is the left-most node in that subtree. 
-    Otherwise, successor of p, should have p in its sub-tree
+    Otherwise, do regular search from root to p, but remember the node of the last left turn and return that
 */
 class Solution {
 public:
